@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  # Netlify's Next.js plugin will handle the correct publish/output
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[context.production.environment]
+  # ensure Next uses the correct image optimization and other features
+  NEXT_RUNTIME = "node"
