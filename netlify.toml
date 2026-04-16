@@ -1,4 +1,12 @@
 [build]
+  command = "yarn build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[context.production.environment]
+  NODE_VERSION = "22"
+[build]
   command = "npm run build"
   # Netlify's Next.js plugin will handle the correct publish/output
 
