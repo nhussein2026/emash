@@ -16,9 +16,9 @@ export default async function PostPage({ params }: Props) {
   } catch (err) {
     return (
       <div className="text-center py-20 bg-gray-50 min-h-[60vh] flex flex-col items-center justify-center">
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Post not found</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">المقال غير موجود</h2>
         <Link href="/" className="text-primary-600 hover:text-primary-700 font-medium flex items-center gap-2">
-          <ArrowLeft className="w-4 h-4" /> Back to Blog
+          <ArrowLeft className="w-4 h-4" /> العودة إلى المدونة
         </Link>
       </div>
     )
@@ -27,9 +27,9 @@ export default async function PostPage({ params }: Props) {
   if (!post) {
     return (
       <div className="text-center py-20 bg-gray-50 min-h-[60vh] flex flex-col items-center justify-center">
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Post not found</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">المقال غير موجود</h2>
         <Link href="/" className="text-primary-600 hover:text-primary-700 font-medium flex items-center gap-2">
-          <ArrowLeft className="w-4 h-4" /> Back to Blog
+          <ArrowLeft className="w-4 h-4" /> العودة إلى المدونة
         </Link>
       </div>
     )
@@ -41,7 +41,7 @@ export default async function PostPage({ params }: Props) {
       <div className="mb-8 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <Link href="/" className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-primary-700 transition-colors group">
           <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
-          Back to all stories
+          العودة إلى جميع المقالات
         </Link>
 
         {post.categories && post.categories.length > 0 && (
@@ -77,7 +77,7 @@ export default async function PostPage({ params }: Props) {
           {post.author && (
             <div className="flex items-center gap-2">
               <User className="w-4 h-4 text-primary-600" />
-              By {post.author.name}
+              بواسطة {post.author.name}
             </div>
           )}
         </div>
@@ -127,7 +127,7 @@ export default async function PostPage({ params }: Props) {
                     <User className="w-10 h-10" />
                   </div>
                 )}
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Written by</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">كتبه</h3>
                 <h4 className="text-xl font-black text-primary-700 mb-4">{post.author.name}</h4>
                 {post.author.bio && (
                   <div className="text-sm text-gray-500 leading-relaxed mb-6">
@@ -138,7 +138,7 @@ export default async function PostPage({ params }: Props) {
                   href={`/author/${post.author.slug?.current || '#'}`}
                   className="w-full py-2 bg-primary-600 text-white text-xs font-bold uppercase tracking-widest rounded-xl hover:bg-primary-700 transition-colors"
                 >
-                  See Profile
+                  عرض الملف الشخصي
                 </Link>
               </div>
             </div>

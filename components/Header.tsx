@@ -16,9 +16,9 @@ export default function Header() {
         </Link>
         
         <nav className="hidden md:flex items-center gap-8">
-          <Link href="/" className="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">Home</Link>
-          <Link href="/about" className="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">About</Link>
-          <Link href="/categories" className="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">Categories</Link>
+          <Link href="/" className="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">الرئيسية</Link>
+          <Link href="/about" className="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">من أنا</Link>
+          <Link href="/categories" className="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors">الفئات</Link>
         </nav>
 
         <div className="flex items-center gap-4">
@@ -29,7 +29,7 @@ export default function Header() {
             href="/contact" 
             className="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-primary-700 rounded-full hover:bg-primary-800 transition-all shadow-md shadow-primary-700/20 active:scale-95"
           >
-            Subscribe
+            اشترك
           </Link>
         </div>
       </div>

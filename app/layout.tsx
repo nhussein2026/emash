@@ -4,13 +4,13 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 export const metadata = {
-  title: 'Alshddadi',
-  description: 'Agriculture blog by an agriculture engineer'
+  title: 'Emash',
+  description: 'مدونة زراعية بواسطة مهندس زراعي'
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl">
       <body className="antialiased">
         <div className="min-h-screen flex flex-col">
           <Header />

@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 :root {
     --bg: #fbfefb;
@@ -15,7 +18,14 @@ body,
 
 body {
     @apply bg-[color:var(--bg)] text-gray-900 antialiased;
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    font-family: 'Cairo', Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+
+/* Ensure default direction and text alignment for Arabic content */
+html[dir="rtl"] body {
+    direction: rtl;
+    text-align: right;
 }
 
 .container {

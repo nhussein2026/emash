@@ -19,7 +19,7 @@ export default function PostCard({ post }: { post: Post }) {
           />
         ) : (
           <div className="w-full h-full bg-gray-100 flex items-center justify-center text-gray-400">
-            No Image
+            لا توجد صورة
           </div>
         )}
         {post.categories && post.categories.length > 0 && (
@@ -88,7 +88,7 @@ export default function PostCard({ post }: { post: Post }) {
             href={`/post/${post.slug.current}`} 
             className="text-xs font-bold text-primary-700 hover:text-primary-800 flex items-center gap-1 group/btn"
           >
-            Read More
+            اقرأ المزيد
             <span className="group-hover/btn:translate-x-1 transition-transform">→</span>
           </Link>
         </div>

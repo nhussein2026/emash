@@ -39,22 +39,21 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-gray-600 text-sm max-w-xs leading-relaxed">
-              Bridging the gap between agricultural engineering and modern technology.
-              Sharing insights, research, and practical field notes.
+              جسر الفجوة بين الهندسة الزراعية والتكنولوجيا الحديثة. مشاركة الأفكار والأبحاث والملاحظات الميدانية العملية.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-gray-900 mb-4">Navigate</h4>
+            <h4 className="font-semibold text-gray-900 mb-4">التنقل</h4>
             <ul className="space-y-2 text-sm text-gray-600">
-              <li><Link href="/" className="hover:text-primary-700 transition-colors">Home</Link></li>
-              <li><Link href="/about" className="hover:text-primary-700 transition-colors">About Me</Link></li>
-              <li><Link href="/blog" className="hover:text-primary-700 transition-colors">Latest Posts</Link></li>
+              <li><Link href="/" className="hover:text-primary-700 transition-colors">الرئيسية</Link></li>
+              <li><Link href="/about" className="hover:text-primary-700 transition-colors">من أنا</Link></li>
+              <li><Link href="/blog" className="hover:text-primary-700 transition-colors">أحدث المنشورات</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-gray-900 mb-4">Connect</h4>
+            <h4 className="font-semibold text-gray-900 mb-4">تواصل</h4>
             <div className="flex gap-4">
               <Link href="https://twitter.com/" aria-label="Twitter" className="p-2 bg-white rounded-full border border-gray-200 text-gray-400 hover:text-primary-600 hover:border-primary-100 transition-all shadow-sm">
                 <TwitterIcon className="w-5 h-5" />
@@ -71,11 +70,11 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-gray-400">
-            &copy; {new Date().getFullYear()} Emash Agriculture. All rights reserved.
+            &copy; {new Date().getFullYear()} Emash Agriculture. جميع الحقوق محفوظة.
           </p>
           <div className="flex gap-6 text-xs text-gray-400">
-            <a href="#" className="hover:text-gray-600">Privacy Policy</a>
-            <a href="#" className="hover:text-gray-600">Terms of Service</a>
+            <a href="#" className="hover:text-gray-600">سياسة الخصوصية</a>
+            <a href="#" className="hover:text-gray-600">شروط الخدمة</a>
           </div>
         </div>
       </div>
