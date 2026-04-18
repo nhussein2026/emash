@@ -1,4 +1,4 @@
-import sanityClient from "@sanity/client";
+import { createClient } from "@sanity/client";
 import { groqGetPosts, groqGetPostBySlug } from "./queries";
 
 const projectId = process.env.SANITY_PROJECT_ID;
@@ -8,7 +8,7 @@ if (!projectId) {
   console.warn("Warning: Missing SANITY_PROJECT_ID in environment variables.");
 }
 
-export const client = sanityClient({
+export const client = createClient({
   projectId: projectId || "8nasmnlb", // Fallback for build phase
   dataset: dataset,
   apiVersion: "2024-01-01",
