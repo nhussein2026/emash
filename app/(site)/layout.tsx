@@ -1,7 +1,7 @@
-import './globals.css'
+import '../globals.css'
 import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 export const metadata = {
   title: 'Emash',

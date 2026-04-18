@@ -12,7 +12,7 @@ export const client = createClient({
   projectId: projectId || "8nasmnlb", // Fallback for build phase
   dataset: dataset,
   apiVersion: "2024-01-01",
-  useCdn: true,
+  useCdn: false, // Set to false to bypass CDN and get immediate updates when a post is created
 });
 
 export async function getPosts() {

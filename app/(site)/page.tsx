@@ -1,7 +1,9 @@
 import React from 'react'
-import { getPosts } from '../lib/sanity'
-import PostCard from '../components/PostCard'
-import { Post } from '../types/post'
+import { getPosts } from '../../lib/sanity'
+import PostCard from '../../components/PostCard'
+import { Post } from '../../types/post'
+
+export const revalidate = 0
 
 export default async function HomePage() {
   let posts: Post[]
@@ -17,10 +19,10 @@ export default async function HomePage() {
   }
 
   return (
-    <section>
+    <section className="container mx-auto px-4 sm:px-6 py-8">
       <header className="mb-8">
-        <h1 className="text-3xl font-bold">أحدث المنشورات</h1>
-        <p className="text-sm text-gray-600 mt-1">أفكار وملاحظات عملية حول الزراعة</p>
+        <h1 className="text-3xl sm:text-4xl font-bold">أحدث المنشورات</h1>
+        <p className="text-sm sm:text-base text-gray-600 mt-1">أفكار وملاحظات عملية حول الزراعة</p>
       </header>
 
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">

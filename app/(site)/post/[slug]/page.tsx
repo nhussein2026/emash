@@ -1,10 +1,12 @@
 import React from 'react'
-import { getPostBySlug } from '../../../lib/sanity'
+import { getPostBySlug } from '../../../../lib/sanity'
 import Image from 'next/image'
 import Link from 'next/link'
 import { PortableText } from '@portabletext/react'
-import { urlForImage } from '../../../lib/image'
+import { urlForImage } from '../../../../lib/image'
 import { Calendar, User, ArrowLeft, Tag } from 'lucide-react'
+
+export const revalidate = 0
 
 type Props = { params: Promise<{ slug: string }> }
 
